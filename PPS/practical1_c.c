@@ -1,17 +1,18 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main(){
-    //initializing the temperature variables in fahrenheit and celsius
+int main()
+{
+    // initializing the temperature variables in fahrenheit and celsius
     float fahrenheit, celsius;
-    
-    //taking temperature in fahrenheit as input
+
+    // taking temperature in fahrenheit as input
     printf("Enter your temperature in fahrenheit: ");
-    scanf("%f",&fahrenheit);
+    scanf("%f", &fahrenheit);
 
-    //calculating temperature in celsius
-    celsius=(5/9)*(fahrenheit-32);
+    // calculating temperature in celsius
+    celsius = (5 / 9) * (fahrenheit - 32);
 
-    //returning the temperature in celsius till two decimal places
-    printf("\nThe temperature in celsius is %.2lf.\n",celsius);
+    // returning the temperature in celsius till two decimal places
+    printf("\nThe temperature in celsius is %.2lf.\n", celsius);
     return 0;
 }
