@@ -14,7 +14,7 @@ int main()
     {
         printf("\nYou are a child. You are ineligible to vote. You have to wait %d years to vote.\n", 18 - age);
     }
-    else if (age >= 12 && age <= 117)
+    else if (age >= 12 && age <= 17)
     {
         printf("\nYou are a teen. You are ineligible to vote. You have to wait %d years to vote.\n", 18 - age);
     }

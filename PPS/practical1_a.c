@@ -17,7 +17,7 @@ int main()
     scanf("%f", &num3);
 
     // printing the value of the average of the three, upto two decimal places
-    printf("The average of the three numbers is %.2lf.", (num1 + num2 + num3) / 3);
+    printf("The average of the three numbers is %.2lf.\n", (num1 + num2 + num3) / 3);
 
     return 0;
 }
