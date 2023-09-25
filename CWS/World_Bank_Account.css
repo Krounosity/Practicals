@@ -1,0 +1,21 @@
+body{
+    background-color: beige;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Space Mono', monospace, sans-serif;
+}
+table , th, td{
+    border: 2px solid black;
+    padding: 3.9px;
+    border-spacing: 6px;
+}
+th, td{
+    padding: 0.69rem 2rem;
+}
+marquee{
+    font-size: large;
+}
+th{
+    background-color: rgb(219, 219, 198);
+}
