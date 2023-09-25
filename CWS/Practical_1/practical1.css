@@ -1,4 +1,36 @@
+html{
+    background-color: rgb(54, 54, 54);
+    font-family: 'Lato', sans-serif;
+}
 .heading{
-    font-size: 1.8rem;
     text-align: center;
+    background-image: url("bgimg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 33rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+.title{
+    font-size: 1.8rem;
+    color: black;
+    background-color: rgb(255, 215, 160);
+    border-radius: 10px;
+}
+
+.about_me{
+    font-size: 1.3rem;
+    color: black;
+    background-color: rgb(255, 215, 160);
+    border-radius: 10px;
+    padding: 0.6rem 1.2rem;
+    line-height: 2rem;
+}
+
+.links{
+    text-decoration: none;
+    color: black;
+}
+.links:hover{
+    color: brown;
 }
