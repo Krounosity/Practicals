@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Bank Account</title>
+</head>
+<body>
+<h1> Registration Form </h1>
+<h2> Personal Details </h2>
+<form id="personal_info">
+<label for = "first_ name">First Name:</label><br>
+<input type="text" id="first_name" placeholder="John"><br><br>
+<label for = "last_name">Last Name:</label><br>
+<input type="text" id="last_name" placeholder="Smith"><br>
+<br>
+<label for="phone_num">Phone Number:</label><br>
+<input type="tel" id="phone_num" placeholder="0123456789" pattern="[0-9]{10}" required><br>
+<br>
+<label for = "perm_address">Permanent Address:</label><br>
+<textarea id = "perm_address" rows="4" cols="52"></textarea>
+<br>
+<br>
+<label for = "state">State:</label><br>
+<select id = "state">
+	<option value="Select State">Select State</option>
+	<option value="Andhra Pradesh">Andhra Pradesh</option>
+	<option value="Bihar">Bihar</option>
+    <option value="Himachal_Pradesh">Himachal Pradesh</option>
+    <option value="Karnataka">Karnataka</option>
+    <option value="Maharashtra">Maharashtra</option>
+    <option value="Nagaland">Nagaland</option>
+    <option value="Orissa">Orissa</option>
+	<option value="Rajasthan">Rajasthan</option>
+    <option value="Uttarakhand">Uttarakhand</option>
+</select><br><br>
+<label for = "DOB">Date Of Birth:</label><br>
+<input type="date" id="DOB">
+<br><br>
+<p>Gender:</p>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="html">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="css">Female</label><br>
+  <input type="radio" id="neither" name="gender" value="neither">
+  <label for="javascript">Choose Not To Specify</label>
+<br><br>
+<label for="income">Annual Income:</label><br>
+<input type="number" id="income"><br><br>
+</form>
+<input type="submit" id="submit" name="Submit"><br><br>
+</body>
