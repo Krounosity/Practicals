@@ -1,6 +1,9 @@
     html{
     font-family: 'Roboto Slab', sans-serif;
     }
+    body{
+        background-color: beige;
+    }
     #title{
  		text-align: center;
         background-color: #34d2eb;
