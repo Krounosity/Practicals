@@ -6,7 +6,7 @@ int main()
     int option;
     printf("Welcome to Number identifier.\n Please enter your desired option:\n1) Armstrong number Identifier\n2) Prime Number Identifier\n3) Square root finder.\n--> ");
     scanf("%d", &option);
-switch(option)
+switch(option){
     case 1:
         int len_num, number_1;
         printf("Welcome to the Armstrong Number Identifier.\n How long is your number?-->");
@@ -67,7 +67,7 @@ switch(option)
     
     default:
         printf("Enter a valid option.");
-        break;
+        break;}
         
     printf("\nThank you!");
     return 0;
