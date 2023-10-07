@@ -4,11 +4,13 @@
 int main()
 {
     int option;
+    int len_num, number_1;
+    int number_2;
+    int number_3;
     printf("Welcome to Number identifier.\n Please enter your desired option:\n1) Armstrong number Identifier\n2) Prime Number Identifier\n3) Square root finder.\n--> ");
     scanf("%d", &option);
 switch(option){
     case 1:
-        int len_num, number_1;
         printf("Welcome to the Armstrong Number Identifier.\n How long is your number?-->");
         scanf("%d", &len_num);
         printf("Please enter the number -->");
@@ -31,7 +33,6 @@ switch(option){
         break;
     
     case 2:
-        long int number_2;
         printf("Welcome to the Prime Number Identifier.\n Please enter a number-->");
         scanf("%d", &number_2);
         int divisor = 2;
@@ -58,7 +59,6 @@ switch(option){
         break;
     
     case 3:
-        int number_3;
         printf("Welcome to the Square Root Finder.\n Please enter a number-->");
         scanf("%d", &number_3);
         float sq_root = sqrt(number_3);
