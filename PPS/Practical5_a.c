@@ -2,8 +2,7 @@
 
 int main()
 {
-    int length_arr = 0;
-    int array_num[length_arr];
+    int length_arr = 0, array_num[length_arr], num_find;
     printf("Hi! What is the length of your array? --> ");
     scanf("%d", &length_arr);
     for (int i = 0; i < length_arr; i++)
@@ -11,7 +10,6 @@ int main()
         printf("Enter number %d: \n", i + 1);
         scanf("%d", &array_num[i]);
     }
-    int num_find;
     printf("What is the number that you want to find? --> ");
     scanf("%d", &num_find);
     int flag = 0;

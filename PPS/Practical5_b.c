@@ -2,8 +2,7 @@
 
 int main()
 {
-	int side;
-	int sum = 0;
+	int side, sum = 0;
 	printf("Welcome to the lower triangular matrix creator! Please enter the length of the side of your matrix: ");
 	scanf("%d", &side);
 	int matrix[side - 1][side - 1];
