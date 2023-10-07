@@ -6,8 +6,8 @@ int main()
     int option;
     printf("Welcome to Number identifier.\n Please enter your desired option:\n1) Armstrong number Identifier\n2) Prime Number Identifier\n3) Square root finder.\n--> ");
     scanf("%d", &option);
-    if (option == 1)
-    {
+switch(option)
+    case 1:
         int len_num, number_1;
         printf("Welcome to the Armstrong Number Identifier.\n How long is your number?-->");
         scanf("%d", &len_num);
@@ -28,9 +28,9 @@ int main()
         {
             printf("No. Your number is not an Armstrong Number.");
         }
-    }
-    else if (option == 2)
-    {
+        break;
+    
+    case 2:
         long int number_2;
         printf("Welcome to the Prime Number Identifier.\n Please enter a number-->");
         scanf("%d", &number_2);
@@ -55,19 +55,20 @@ int main()
         {
             printf("No. Your number is not a Prime Number.");
         }
-    }
-    else if (option == 3)
-    {
+        break;
+    
+    case 3:
         int number_3;
         printf("Welcome to the Square Root Finder.\n Please enter a number-->");
         scanf("%d", &number_3);
         float sq_root = sqrt(number_3);
         printf("The square root of your given number is %lf.", sq_root);
-    }
-    else
-    {
+        break;
+    
+    default:
         printf("Enter a valid option.");
-    }
+        break;
+        
     printf("\nThank you!");
     return 0;
 }
