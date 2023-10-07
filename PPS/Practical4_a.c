@@ -17,7 +17,7 @@ switch(option){
         int temporary = number_1;
         for (int i = 0; i < len_num; i++)
         {
-            num_armstrong = num_armstrong + pow((temporary % 10), 3);
+            num_armstrong = num_armstrong + pow((temporary % 10), len_num);
             temporary = temporary / 10;
         }
         if (num_armstrong == number_1)
