@@ -1,8 +1,20 @@
 body{
     font-family: 'Onest', sans-serif;
+    background-color: black;
 }
 .heading{
     text-align: center;
+    background-color: red;
+    background-image: url(images/heading_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100rem;
+    background-position-y: -8rem;
+    border-radius: 10px;
+    font-size: 2.4rem;
+    color:aliceblue;
+    padding: 14.1rem 0rem;
+    -webkit-text-stroke: 3px;
+    -webkit-text-stroke-color: black;
 }
 .genres-grid{
     display: grid;
@@ -18,6 +30,8 @@ body{
     background-color: rgb(255, 213, 0);
     padding-top: 1px;
     padding-bottom: 60px;
+    margin-top: 2rem;
+    border-radius: 10px;
 }
 .genre{
     text-align: center;
