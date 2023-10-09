@@ -7,12 +7,13 @@ body{
     background-color: red;
     background-image: url(images/heading_bg.jpg);
     background-repeat: no-repeat;
-    background-size: 100rem;
+    background-size: 100%;
     background-position-y: -8rem;
     border-radius: 10px;
     font-size: 2.4rem;
     color:aliceblue;
-    padding: 14.1rem 0rem;
+    padding-top: 9rem;
+    padding-bottom: 19.2rem;
     -webkit-text-stroke: 3px;
     -webkit-text-stroke-color: black;
 }
@@ -38,6 +39,10 @@ body{
     height: 12rem;
     line-height: 9em;
     border-radius: 0.8rem;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-x: 50%;
+    font-size: 18px;
     :hover{
         box-shadow: 9px 9px transparent;
     }
@@ -51,55 +56,79 @@ body{
     background-image: url(images/hector-bermudez-iIWDt0fXa84-unsplash.jpg);
     background-size: 20em;
     color:white;
-    -webkit-text-stroke: 0.5px;
+    -webkit-text-stroke: 0.7px;
     -webkit-text-stroke-color: black;
 }
 .jazz{
     background-image: url(images/jazz.jpg);
     background-size: 20em;
     color:white;
-    -webkit-text-stroke: 0.5px;
+    -webkit-text-stroke: 0.7px;
     -webkit-text-stroke-color: black;
 }
 .heavy_metal{
     background-image: url(images/metallica.jpg);
     background-size: 22rem;
     color:black;
-    -webkit-text-stroke: 0.5px;
+    -webkit-text-stroke: 0.7px;
     -webkit-text-stroke-color: white;
 }
 .kpop{
     background-image: url(images/kpop.jpg);
     background-size: 24em;
     color:black;
-    -webkit-text-stroke: 0.5px;
+    -webkit-text-stroke: 0.7px;
     -webkit-text-stroke-color: white;
 }
 .electro{
     background-image: url(images/electro.jpg);
     background-size: 100%;
     color:black;
-    -webkit-text-stroke: 0.5px;
+    -webkit-text-stroke: 0.7px;
     -webkit-text-stroke-color: white;
 }
 .rnb{
     background-image: url(images/rnb.jpg);
     background-size: 24em;
     color:white;
-    -webkit-text-stroke: 0.5px;
+    -webkit-text-stroke: 0.7px;
     -webkit-text-stroke-color: black;
 }
 .pop{
     background-image: url(images/pop.jpg);
     background-size: 24em;
     color:white;
-    -webkit-text-stroke: 0.5px;
+    -webkit-text-stroke: 0.7px;
     -webkit-text-stroke-color: black;
 }
 .lofi{
     background-image: url(images/lofi.jpg);
     background-size: 24em;
     color:black;
-    -webkit-text-stroke: 0.5px;
+    -webkit-text-stroke: 0.7px;
     -webkit-text-stroke-color: white;
+}
+.genre-content{
+    background-color: white;
+}
+.quote{
+    background-image: url(images/quote_bg.png);
+    text-align: center;
+    padding-top: 9rem;
+    padding-bottom: 33rem;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 2rem;
+    border-radius: 10px;
+}
+.quote-text{
+    font-size: 27px;
+    margin-top: 2rem;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: black;
+    color: red;
+    border-radius: 10px;
+    background-color: white;
+    opacity: 0.8;
+    margin: 0rem 6.9rem;
 }
