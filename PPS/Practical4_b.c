@@ -2,14 +2,12 @@
 
 int main()
 {
-    int option;
+    int option, year, num;
     char letter;
-    int year;
-    int num;
     printf("Welcome to the Check-inator! Please select an option:\n1)Vowel Checker.\n2) Leap Year Checker.\n3)Even Number Checker.\n-->");
     scanf("%d", &option);
-    
-    switch(option){
+    switch (option)
+    {
     case 1:
         printf("Welcome to the Vowel Checker! Enter a character--> ");
         scanf(" %c", &letter);
