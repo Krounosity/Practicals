@@ -109,7 +109,6 @@ body{
     -webkit-text-stroke-color: white;
 }
 .genre-content{
-    background-color: white;
     border-radius: 10px;
     margin-top: 2rem;
 }
@@ -138,22 +137,59 @@ body{
     padding: 0rem 18rem; 
     color: white;
 }
-.rock-content{
-    background-color: rgb(28, 0, 93);
-    padding-bottom: 2rem;
-}
-.rock-content h2{
+.genre-content h2{
     font-size: 3rem;
     padding-left: 9rem;
     padding-top: 2rem;
+}
+.genre-content{
+    padding-bottom: 2rem;
+}
+#pop-content{
+    color: black;
+    background-color: pink;
+}
+#rock-content{
+    background-color: rgb(28, 0, 93);
     color: white;
 }
-.pop-content{
-    background-color: pink;
-    padding-bottom: 2rem;
-    margin-top: 2rem;
-    color: black;
+#rnb-content{
+    background-color: khaki;
 }
-.pop-content h2{
-
+#lofi-content{
+    background-color: rgb(161, 61, 192);
+    color: white;
+}
+#heavy-metal-content{
+    background-color: rgb(182, 169, 155);
+}
+#electro-content{
+    background-color: turquoise;
+}
+#jazz-content{
+    background-color: silver;
+}
+#kpop-content{
+    background-color: violet;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    -webkit-text-stroke: inherit;
+    -webkit-text-stroke-color: inherit;
+}
+a:visited{
+    color: inherit;
+    -webkit-text-stroke: inherit;
+    -webkit-text-stroke-color: inherit;
+}
+footer{
+    background-color: blanchedalmond;
+    font-size: 2rem;
+    text-align: center;
+}
+.icons{
+    padding: 0rem 2rem;
+    margin-left: 8rem;
+    size: 2rem 2rem;
 }
