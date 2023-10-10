@@ -24,7 +24,8 @@ body{
     gap: 1.8rem;
     padding: 0rem 12rem;
     :hover{
-        box-shadow: 9px 9px aquamarine;
+        box-shadow: 9px 9px 5px aquamarine;
+        transition: box-shadow 0.81s ease-in-out;
     }
 }
 .genres{
@@ -44,7 +45,8 @@ body{
     background-position-x: 50%;
     font-size: 18px;
     :hover{
-        box-shadow: 9px 9px transparent;
+        box-shadow: 9px 9px 5px transparent;
+        transition: box-shadow 0.81s ease-in-out;
     }
 
 }
@@ -187,9 +189,16 @@ footer{
     background-color: blanchedalmond;
     font-size: 2rem;
     text-align: center;
+    padding: 10px 0px;
+    margin-top: 2rem;
 }
 .icons{
     padding: 0rem 2rem;
-    margin-left: 8rem;
+    margin-left: 1rem;
     size: 2rem 2rem;
 }
+.icons-image:hover{
+    box-shadow: 10px 10px 5px lightblue;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
