@@ -134,3 +134,26 @@ body{
     opacity: 0.8;
     margin: 0rem 6.9rem;
 }
+.song{
+    padding: 0rem 18rem; 
+    color: white;
+}
+.rock-content{
+    background-color: rgb(28, 0, 93);
+    padding-bottom: 2rem;
+}
+.rock-content h2{
+    font-size: 3rem;
+    padding-left: 9rem;
+    padding-top: 2rem;
+    color: white;
+}
+.pop-content{
+    background-color: pink;
+    padding-bottom: 2rem;
+    margin-top: 2rem;
+    color: black;
+}
+.pop-content h2{
+
+}
