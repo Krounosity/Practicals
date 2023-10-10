@@ -110,6 +110,8 @@ body{
 }
 .genre-content{
     background-color: white;
+    border-radius: 10px;
+    margin-top: 2rem;
 }
 .quote{
     background-image: url(images/quote_bg.png);
