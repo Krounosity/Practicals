@@ -3,21 +3,21 @@
 
 int main()
 {
-    int option, nat_num, count = 0, dimension = 0, i = 0, j = 0, k = 0, l = 1, flag = 0;
+    int option, nat_num, count = 0, dimension = 0, i, j, k, l, flag = 0, n;
     float sides[3];
-    int factors[MAX], matrix[dimension][dimension];
+    int factors[MAX], matrix[100][100];
     printf("Welcome! Please enter the desired option:\n1)Triangle Type Finder.\n2)Factor Finder.\n3)Identity Matrix Checker.\n");
     scanf("%d", &option);
     switch (option)
     {
     case 1:
         printf("Welcome to the Triangle Type Finder.");
-        for (int k = 0; k < 3; k++)
+        for (k = 0; k < 3; k++)
         {
             printf("Please enter side %d: ", k + 1);
             scanf("%f", &sides[k]);
         }
-        if (sides[0] == sides[1] == sides[2])
+        if (sides[0] == sides[1] && sides[1] == sides[2])
         {
             printf("The triangle is an quilateral triangle.");
         }
@@ -33,7 +33,7 @@ int main()
     case 2:
         printf("Welcome to the Factor Finder. Please enter a natural number: ");
         scanf("%d", &nat_num);
-        for (int l = 1; l <= nat_num; l++)
+        for (l = 1; l <= nat_num; l++)
         {
             if (nat_num % l == 0)
             {
@@ -46,9 +46,9 @@ int main()
             }
         }
         printf("The factors of %d are: ", nat_num);
-        for (int i = 0; i < count; i++)
+        for (n = 0; n < count; n++)
         {
-            printf("%d ", factors[i]);
+            printf("%d ", factors[n]);
         }
         break;
 
@@ -63,9 +63,9 @@ int main()
                 scanf("%d", &matrix[i][j]);
             }
         }
-        for (int i = 0; i < dimension; i++)
+        for (i = 0; i < dimension; i++)
         {
-            for (int j = 0; j <= i; j++)
+            for (j = 0; j <= i; j++)
             {
                 if (i == j)
                 {
