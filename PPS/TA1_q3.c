@@ -2,20 +2,20 @@
 
 int main()
 {
-    int rows;
+    int rows, i, j, k, l;
     printf("Welcome to the number triangle maker! Please enter the number of rows you desire: ");
     scanf("%d", &rows);
-    for (int i = 1; i <= rows; i++)
+    for (i = 1; i <= rows; i++)
     {
-        for (int k = 0; k < rows - i; k++)
+        for (j = 0; j < rows - i; j++)
         {
             printf(" ");
         }
-        for (int j = 1; j <= i; j++)
+        for (k = 1; k <= i; k++)
         {
             printf("%d", j);
         }
-        for (int l = i - 1; l > 0; l--)
+        for (l = i - 1; l > 0; l--)
         {
             printf("%d", l);
         }
