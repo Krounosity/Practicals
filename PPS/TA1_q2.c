@@ -19,7 +19,7 @@ int main()
         }
         if (sides[0] == sides[1] && sides[1] == sides[2])
         {
-            printf("The triangle is an quilateral triangle.");
+            printf("The triangle is an equilateral triangle.");
         }
         else if (sides[0] == sides[1] || sides[1] == sides[2] || sides[0] == sides[2])
         {
