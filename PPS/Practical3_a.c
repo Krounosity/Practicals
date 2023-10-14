@@ -2,11 +2,17 @@
 
 int main()
 {
-	int num1, num2, sum = 0;
+	int num1, num2, sum = 0, temp;
 	printf("Enter number 1: ");
 	scanf("%d", &num1);
 	printf("Enter number 2: ");
 	scanf("%d", &num2);
+	if (num1 > num2)
+	{
+		temp = num1;
+		num1 = num2;
+		num2 = temp;
+	}
 	if (num1 % 2 == 0)
 	{
 		if (num2 % 2 == 0)
