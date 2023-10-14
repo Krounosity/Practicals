@@ -5,7 +5,7 @@ int main()
     int num_1 = 0, num_2 = 1, temporary = 0, num, i = 0;
     printf("Enter the number of elements you want in the Fibonacci series: ");
     scanf("%d", &num);
-    printf("0 1 ");
+    printf("%d %d ", num_1, num_2);
     do
     {
         temporary = num_1 + num_2;
