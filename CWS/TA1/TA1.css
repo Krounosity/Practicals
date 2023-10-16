@@ -53,35 +53,23 @@ body{
     line-height: 2.4rem;
     text-align: justify;
 }
-#img_history img{
-    width: 40%;
-    height: 100%;
-    margin-left: 33rem;
+a{
+    text-decoration: none;
+    color:#0033A0;
 }
-#img_history p{
-    font-size: 0.8rem;
-    margin-left: 20rem;
-    margin-right: 10rem;
-    text-align: justify;
-    line-height: 1.2rem;
-    margin-top: 0;
-    margin-bottom: 3rem;
+a:hover{
+    color: purple;
 }
-#img_history{
-    margin-bottom: 4rem;
+footer{
+    background-color: rgb(98, 93, 87);
+    margin: 0;
+    height: 300px;
+    text-align: center;
+    font-size: 1.5rem;
 }
-.key_ach{
-    padding: 3rem 12rem;
-    margin-left: 13rem;
+footer a{
+    text-decoration: none;
 }
-.key_ach p{
-    background-color: #0033A0;
-    color: #ffffff;
-    margin-left: 24rem;
-    margin-right: 3rem;
-    padding: 6rem 3rem;
-    border-radius: 1rem;
-}
-.key_ach h2{
-    font-size: 2rem;
+footer h2{
+    padding-top: 7rem;
 }
