@@ -3,32 +3,85 @@ body{
     background-size: 100%;
     background-attachment: fixed;
     font-family: 'Open Sans', sans-serif;
-    display: grid;
-    grid-template-columns: 1fr 5fr;
 }
 #navbar{
-    display: grid;
-    background-color: #ffffff;
+    position: fixed;
+    background-color: #0033A0;
     margin: 0;
-    line-height: 3rem;
+    line-height: 3em;
     font-size: 1.2rem;
-    max-width: 11rem;
+    max-width: 20rem;
     border-radius: 1rem;
     padding-left: 1.2rem;
     padding-right: 0.9rem;
+    margin: 0rem 0.4rem;
+    margin-top: 0.4rem;
     z-index: 1;
+    height: 94.5%;
+    align-items: center;
+}
+#navbar_items{
+    padding-top: 9rem;
 }
 #navbar a{
-    color: #0033A0;
+    color: #ffffff;
     text-decoration: none;
 }
-.about{
+.content{
+    margin:1rem 0rem;
+    display: grid;
     width: 100%;
     color: #0033A0;
     background-color: #ffffff;
-    border-radius: 1rem;
 }
-.about h1{
+.content h1{
     text-align: center;
     font-size: 2.7rem;
+    margin-left: 13rem;
+}
+.content p{
+    padding: 3rem 12rem;
+    font-size: 1.7rem;
+    margin-left: 13rem;
+    line-height: 2.4rem;
+    text-align: justify;
+}
+.content ul{
+    padding: 3rem 14rem;
+    font-size: 1.7rem;
+    margin-left: 13rem;
+    line-height: 2.4rem;
+    text-align: justify;
+}
+#img_history img{
+    width: 40%;
+    height: 100%;
+    margin-left: 33rem;
+}
+#img_history p{
+    font-size: 0.8rem;
+    margin-left: 20rem;
+    margin-right: 10rem;
+    text-align: justify;
+    line-height: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 3rem;
+}
+#img_history{
+    margin-bottom: 4rem;
+}
+.key_ach{
+    padding: 3rem 12rem;
+    margin-left: 13rem;
+}
+.key_ach p{
+    background-color: #0033A0;
+    color: #ffffff;
+    margin-left: 24rem;
+    margin-right: 3rem;
+    padding: 6rem 3rem;
+    border-radius: 1rem;
+}
+.key_ach h2{
+    font-size: 2rem;
 }
