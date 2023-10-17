@@ -1,0 +1,70 @@
+body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin:0;
+    padding: 0;
+    background-image: url("images/village_2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+#start{
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    padding: 0rem 20rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    text-align: center;
+    margin: 1rem 3rem;  
+}
+#start h1{
+    font-size: 3rem;
+}
+#start p{
+    font-size: 1.2rem;
+}
+#back_to_top{
+    text-align: center;
+    text-decoration: none;
+    color: black;    
+}
+#back_to_top div{
+    background-color: rgb(252, 201, 125);
+    padding-bottom: 0.4rem;
+}
+.content{
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    padding: 0rem 15rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    text-align: justify;
+    margin: 1rem 3rem;  
+}
+.content p{
+    font-size: 1.2rem;
+}
+footer{
+    background-color:rgb(129, 105, 88);
+    padding: 0rem 20rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    text-align: center;
+}
+footer h2{
+    font-size: 2rem;
+}
+.links{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+}
+.links:hover{
+    color:violet;
+}
+.gmail{
+    font-size: 1.2rem;
+    padding-bottom: 2.4rem;
+}
+marquee{
+    padding: 3rem
+}
