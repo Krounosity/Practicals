@@ -201,11 +201,12 @@ footer{
     box-shadow: 10px 10px 5px lightblue;
     transition: box-shadow 0.2s ease-in-out;
 }
-.back_to_top{
+.To_top{
     background-color: white;
     text-align: center;
     font-size: 1rem;
-    border-radius: 10px;
+    border-radius: 12px;
+    border-top-left-radius: 63px;
     position: fixed;
     right: 20px;
     bottom: 20px;
