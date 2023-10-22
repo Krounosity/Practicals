@@ -1,0 +1,12 @@
+.button {
+  text-align: center;
+}
+.button:hover {
+  background-color: rgb(211, 208, 208);
+  transition: 0.21s ease-in-out;
+}
+#title {
+  text-align: center;
+}
+#calculator {
+}
