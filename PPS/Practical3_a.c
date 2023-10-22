@@ -17,16 +17,16 @@ int main()
 	{
 		if (num2 % 2 == 0)
 		{
-			for (int i = num1; i <= num2; i = i + 2)
+			for (int i = num1; i <= num2; i += 2)
 			{
-				sum = sum + i;
+				sum += i;
 			}
 		}
 		else
 		{
-			for (int i = num1; i <= (num2 - 1); i = i + 2)
+			for (int i = num1; i <= (num2 - 1); i += 2)
 			{
-				sum = sum + i;
+				sum += i;
 			}
 		}
 	}
@@ -34,16 +34,16 @@ int main()
 	{
 		if (num2 % 2 == 0)
 		{
-			for (int i = (num1 + 1); i <= num2; i = i + 2)
+			for (int i = (num1 + 1); i <= num2; i += 2)
 			{
-				sum = sum + i;
+				sum += i;
 			}
 		}
 		else
 		{
-			for (int i = num1 + 1; i <= (num2 - 1); i = i + 2)
+			for (int i = num1 + 1; i <= (num2 - 1); i += 2)
 			{
-				sum = sum + i;
+				sum += i;
 			}
 		}
 	}
