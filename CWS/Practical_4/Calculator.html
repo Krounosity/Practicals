@@ -5,39 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
     <link rel="stylesheet" href="Calculator.css" />
+    <link rel="icon" type="image/x-icon" href="images/calculator.png" />
   </head>
   <body>
     <div id="title">
       <h1>The Calculator</h1>
     </div>
     <div id="calculator">
-      <table>
-        <tr>
-          <td class="button" id="seven">7</td>
-          <td class="button" id="eight">8</td>
-          <td class="button" id="nine">9</td>
-          <td class="button" id="clear">CE</td>
-        </tr>
-        <tr>
-          <td class="button" id="four">4</td>
-          <td class="button" id="five">5</td>
-          <td class="button" id="six">6</td>
-          <td class="button" id="multiply">*</td>
-        </tr>
-        <tr>
-          <td class="button" id="one">1</td>
-          <td class="button" id="two">2</td>
-          <td class="button" id="three">3</td>
-          <td class="button" id="divide">/</td>
-        </tr>
-        <tr>
-          <td class="button" id="sign">+/-</td>
-          <td class="button" id="zero">0</td>
-          <td class="button" id="minus">-</td>
-          <td class="button" id="plus">+</td>
-        </tr>
-      </table>
+      <p class="result"></p>
+      <div class="buttons equal">=</div>
+      <div class="buttons number seven">7</div>
+      <div class="buttons number eight">8</div>
+      <div class="buttons number nine">9</div>
+      <div class="buttons clear">CE</div>
+      <div class="buttons number four">4</div>
+      <div class="buttons number five">5</div>
+      <div class="buttons number six">6</div>
+      <div class="buttons divide">/</div>
+      <div class="buttons number one">1</div>
+      <div class="buttons number two">2</div>
+      <div class="buttons number three">3</div>
+      <div class="buttons mult">*</div>
+      <div class="buttons sign">+/-</div>
+      <div class="buttons number zero">0</div>
+      <div class="buttons minus">-</div>
+      <div class="buttons plus">+</div>
     </div>
+    <a href="#">
+      <div class="To_top">
+        <h1>To Top</h1>
+      </div>
+    </a>
     <script src="Calculator.js"></script>
   </body>
+  <footer style="border-radius: 10px">
+    <h2>Made with love by <a>Krounosity</a></h2>
+    <div class="links">
+      <a
+        target="_blank"
+        class="icons"
+        href="https://www.instagram.com/xperio2446/"
+        ><img class="icons-image" src="images/instagram.png" id="instagram"
+      /></a>
+      <a target="_blank" class="icons" href="https://github.com/Krounosity"
+        ><img src="images/github.png" class="icons-image" id="github"
+      /></a>
+      <a
+        target="_blank"
+        class="icons"
+        href="https://www.linkedin.com/in/varnan-rathod-47372a229/"
+        ><img src="images/linkedin.png" class="icons-image" id="linkedin"
+      /></a>
+      <p>Official: varnanrathod6@gmail.com</p>
+      <a
+        href="https://www.flaticon.com/free-icons/calculator"
+        title="calculator icons"
+        style="font-size: 0.9rem"
+        >Calculator icons created by Freepik - Flaticon</a
+      >
+    </div>
+  </footer>
 </html>

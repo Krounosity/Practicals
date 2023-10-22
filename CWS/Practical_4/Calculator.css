@@ -1,12 +1,111 @@
-.button {
-  text-align: center;
+body {
+  font-family: "monospace", sans-serif;
+  padding: 0rem;
+  margin: 0rem;
 }
-.button:hover {
+#calculator {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  text-align: center;
+  padding: 2rem 30rem;
+  padding-top: 12rem;
+  max-width: 840px;
+  min-width: 400px;
+}
+.buttons {
+  padding: 2.1rem 0rem;
+  border-style: outset;
+  border-radius: 10px;
+  margin: 0.3rem;
+  font-size: 1.5rem;
+  user-select: none;
+}
+.buttons:hover {
   background-color: rgb(211, 208, 208);
   transition: 0.21s ease-in-out;
 }
 #title {
+  position: fixed;
   text-align: center;
+  font-size: 1.8rem;
+  background-color: blanchedalmond;
+  padding: 1rem;
+  margin: 0rem;
+  width: 100%;
 }
-#calculator {
+table {
+  padding-left: 48%;
+}
+.clear,
+.sign,
+.divide,
+.minus,
+.plus,
+.mult {
+  background-color: rgb(233, 233, 233);
+}
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine,
+.zero {
+  background-color: white;
+}
+.result {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  border-style: solid;
+  border-width: 0.1px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 1.8rem 0rem;
+  height: 1.8rem;
+}
+.result:hover {
+  background-color: rgb(246, 240, 240);
+  transition: 0.21s ease-in-out;
+}
+.equal {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  background-color: rgb(233, 233, 233);
+}
+footer {
+  background-color: blanchedalmond;
+  font-size: 2rem;
+  text-align: center;
+  padding: 10px 0px;
+  margin-top: 2rem;
+}
+.icons {
+  padding: 0rem 2rem;
+  margin-left: 1rem;
+  size: 2rem 2rem;
+}
+.icons-image:hover {
+  box-shadow: 10px 10px 5px lightblue;
+  transition: box-shadow 0.2s ease-in-out;
+}
+.To_top {
+  background-color: blanchedalmond;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 12px;
+  border-top-left-radius: 63px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  padding: 2rem;
+  color: black;
+}
+.To_top:hover {
+  background-color: rgb(255, 216, 119);
 }
