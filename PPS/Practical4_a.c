@@ -4,7 +4,11 @@
 int main()
 {
     int option, len_num, number_1, number_2, number_3;
-    printf("Welcome to Number identifier.\n Please enter your desired option:\n1) Armstrong number Identifier\n2) Prime Number Identifier\n3) Square root finder.\n--> ");
+    printf("Welcome to Number identifier.\n");
+    printf("1) Armstrong number Identifier\n");
+    printf("2) Prime Number Identifier\n");
+    printf("3) Square root finder.\n");
+    printf("Please enter your desired option--> ");
     scanf("%d", &option);
     switch (option)
     {
@@ -14,11 +18,11 @@ int main()
         printf("Please enter the number -->");
         scanf("%d", &number_1);
         int num_armstrong = 0;
-        int temporary = number_1;
+        int temp = number_1;
         for (int i = 0; i < len_num; i++)
         {
-            num_armstrong = num_armstrong + pow((temporary % 10), len_num);
-            temporary = temporary / 10;
+            num_armstrong = num_armstrong + pow((temp % 10), len_num);
+            temp = temp / 10;
         }
         if (num_armstrong == number_1)
         {

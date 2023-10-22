@@ -4,14 +4,19 @@ int main()
 {
     int option, year, num;
     char letter;
-    printf("Welcome to the Check-inator! Please select an option:\n1)Vowel Checker.\n2) Leap Year Checker.\n3)Even Number Checker.\n-->");
+    printf("Welcome to the Check-inator!\n");
+    printf("1)Vowel Checker\n");
+    printf("2)Leap Year Checker\n");
+    printf("3)Even Number Checker\n");
+    printf("Please select an option--> ");
     scanf("%d", &option);
     switch (option)
     {
     case 1:
         printf("Welcome to the Vowel Checker! Enter a character--> ");
         scanf(" %c", &letter);
-        if (letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u' || letter == 'A' || letter == 'E' || letter == 'I' || letter == 'O' || letter == 'U')
+        if (letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u' ||
+            letter == 'A' || letter == 'E' || letter == 'I' || letter == 'O' || letter == 'U')
         {
             printf("Your letter is a vowel!\n");
         }
