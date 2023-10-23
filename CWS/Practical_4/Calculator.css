@@ -26,7 +26,6 @@ body {
   transition: 0.21s ease-in-out;
 }
 #title {
-  position: fixed;
   text-align: center;
   font-size: 1.8rem;
   background-color: blanchedalmond;
@@ -42,7 +41,8 @@ table {
 .divide,
 .minus,
 .plus,
-.mult {
+.mult,
+.back {
   background-color: rgb(233, 233, 233);
 }
 .one,
@@ -75,7 +75,7 @@ table {
 .equal {
   display: grid;
   grid-column-start: 1;
-  grid-column-end: 5;
+  grid-column-end: 2;
   background-color: rgb(233, 233, 233);
 }
 footer {
@@ -108,4 +108,9 @@ footer {
 }
 .To_top:hover {
   background-color: rgb(255, 216, 119);
+}
+.back {
+  display: grid;
+  grid-column-start: 4;
+  grid-column-end: 5;
 }
