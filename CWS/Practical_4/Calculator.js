@@ -7,7 +7,7 @@ document.querySelector(".one").addEventListener("click", function () {
     document.querySelector(".result").innerHTML = result;
   } else {
     afterOperation = afterOperation * 10 + 1;
-    document.querySelector(".result").innerHTML = afterOperation;
+    document.querySelector(".result").innerHTML += afterOperation % 10;
   }
 });
 document.querySelector(".two").addEventListener("click", function () {
@@ -16,7 +16,7 @@ document.querySelector(".two").addEventListener("click", function () {
     document.querySelector(".result").innerHTML = result;
   } else {
     afterOperation = afterOperation * 10 + 2;
-    document.querySelector(".result").innerHTML = afterOperation;
+    document.querySelector(".result").innerHTML += afterOperation % 10;
   }
 });
 document.querySelector(".three").addEventListener("click", function () {
@@ -25,7 +25,7 @@ document.querySelector(".three").addEventListener("click", function () {
     document.querySelector(".result").innerHTML = result;
   } else {
     afterOperation = afterOperation * 10 + 3;
-    document.querySelector(".result").innerHTML = afterOperation;
+    document.querySelector(".result").innerHTML += afterOperation % 10;
   }
 });
 document.querySelector(".four").addEventListener("click", function () {
@@ -34,7 +34,7 @@ document.querySelector(".four").addEventListener("click", function () {
     document.querySelector(".result").innerHTML = result;
   } else {
     afterOperation = afterOperation * 10 + 4;
-    document.querySelector(".result").innerHTML = afterOperation;
+    document.querySelector(".result").innerHTML += afterOperation % 10;
   }
 });
 document.querySelector(".five").addEventListener("click", function () {
@@ -43,7 +43,7 @@ document.querySelector(".five").addEventListener("click", function () {
     document.querySelector(".result").innerHTML = result;
   } else {
     afterOperation = afterOperation * 10 + 5;
-    document.querySelector(".result").innerHTML = afterOperation;
+    document.querySelector(".result").innerHTML += afterOperation % 10;
   }
 });
 document.querySelector(".six").addEventListener("click", function () {
@@ -52,7 +52,7 @@ document.querySelector(".six").addEventListener("click", function () {
     document.querySelector(".result").innerHTML = result;
   } else {
     afterOperation = afterOperation * 10 + 6;
-    document.querySelector(".result").innerHTML = afterOperation;
+    document.querySelector(".result").innerHTML += afterOperation % 10;
   }
 });
 document.querySelector(".seven").addEventListener("click", function () {
@@ -61,7 +61,7 @@ document.querySelector(".seven").addEventListener("click", function () {
     document.querySelector(".result").innerHTML = result;
   } else {
     afterOperation = afterOperation * 10 + 7;
-    document.querySelector(".result").innerHTML = afterOperation;
+    document.querySelector(".result").innerHTML += afterOperation % 10;
   }
 });
 document.querySelector(".eight").addEventListener("click", function () {
@@ -70,7 +70,7 @@ document.querySelector(".eight").addEventListener("click", function () {
     document.querySelector(".result").innerHTML = result;
   } else {
     afterOperation = afterOperation * 10 + 8;
-    document.querySelector(".result").innerHTML = afterOperation;
+    document.querySelector(".result").innerHTML += afterOperation % 10;
   }
 });
 document.querySelector(".nine").addEventListener("click", function () {
@@ -79,7 +79,7 @@ document.querySelector(".nine").addEventListener("click", function () {
     document.querySelector(".result").innerHTML = result;
   } else {
     afterOperation = afterOperation * 10 + 9;
-    document.querySelector(".result").innerHTML = afterOperation;
+    document.querySelector(".result").innerHTML += afterOperation % 10;
   }
 });
 document.querySelector(".zero").addEventListener("click", function () {
@@ -88,7 +88,7 @@ document.querySelector(".zero").addEventListener("click", function () {
     document.querySelector(".result").innerHTML = result;
   } else {
     afterOperation = afterOperation * 10 + 0;
-    document.querySelector(".result").innerHTML = afterOperation;
+    document.querySelector(".result").innerHTML += afterOperation % 10;
   }
 });
 document.querySelector(".clear").addEventListener("click", function () {
@@ -102,19 +102,20 @@ document.querySelector(".sign").addEventListener("click", function () {
   document.querySelector(".result").innerHTML = result;
 });
 document.querySelector(".plus").addEventListener("click", function () {
-  document.querySelector(".result").innerHTML = "+";
+  document.querySelector(".result").innerHTML = result + "+";
+
   operation = "plus";
 });
 document.querySelector(".minus").addEventListener("click", function () {
-  document.querySelector(".result").innerHTML = "-";
+  document.querySelector(".result").innerHTML = result + "-";
   operation = "minus";
 });
 document.querySelector(".mult").addEventListener("click", function () {
-  document.querySelector(".result").innerHTML = "*";
+  document.querySelector(".result").innerHTML = result + "*";
   operation = "mult";
 });
 document.querySelector(".divide").addEventListener("click", function () {
-  document.querySelector(".result").innerHTML = "/";
+  document.querySelector(".result").innerHTML = result + "/";
   operation = "divide";
 });
 document.querySelector(".equal").addEventListener("click", function () {
@@ -130,6 +131,19 @@ document.querySelector(".equal").addEventListener("click", function () {
   } else if (operation === "divide") {
     result = calculation(result, afterOperation, divide);
     document.querySelector(".result").innerHTML = result;
+  }
+  operation = "nothing";
+});
+document.querySelector(".back").addEventListener("click", function () {
+  if (operation === "nothing" && result !== 0) {
+    result = Math.floor(result / 10);
+    document.querySelector(".result").innerHTML = result;
+  } else if (operation !== "nothing" && afterOperation === 0) {
+    operation = "nothing";
+    document.querySelector(".result").innerHTML = result;
+  } else if (afterOperation !== 0) {
+    afterOperation = Math.floor(afterOperation / 10);
+    document.querySelector(".result").innerHTML += afterOperation;
   }
 });
 //Functions or operations

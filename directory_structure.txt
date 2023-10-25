@@ -1,0 +1,124 @@
+📂 Practicals (Current Directory)
+  - directory_structure.md
+  - directory_structure.txt
+  - DirecTracer.py
+  - README.md
+📂 CWS
+  - internal_practical.html
+  - village_2.jpg
+	📂 Fonts
+	  - Lato.zip
+		📂 Lato
+		  - Lato-Black.ttf
+		  - Lato-BlackItalic.ttf
+		  - Lato-Bold.ttf
+		  - Lato-BoldItalic.ttf
+		  - Lato-Italic.ttf
+		  - Lato-Light.ttf
+		  - Lato-LightItalic.ttf
+		  - Lato-Regular.ttf
+		  - Lato-Thin.ttf
+		  - Lato-ThinItalic.ttf
+		  - OFL.txt
+	📂 Interal_Practical
+	  - internal_practical.css
+	📂 Practical_1
+	  - bgimg.jpg
+	  - icons8-brain-96.png
+	  - practical1.css
+	  - practical1.html
+	📂 Practical_2
+	  - Registration_Form.css
+	  - Registration_Form.html
+	  - World_Bank_Account.css
+	  - World_Bank_Account.html
+	📂 Practical_3
+	  - Music_Mania.css
+	  - Music_Mania.html
+		📂 images
+		  - Back_to_top.png
+		  - electro.jpg
+		  - github.png
+		  - gmail.png
+		  - heading_bg.jpg
+		  - hector-bermudez-iIWDt0fXa84-unsplash.jpg
+		  - instagram.png
+		  - jazz.jpg
+		  - kpop.jpg
+		  - linkedin.png
+		  - lofi.jpg
+		  - metallica.jpg
+		  - pop.jpg
+		  - quote_bg.png
+		  - rnb.jpg
+		📂 videos
+		  - Avicii - SOS (Fan Memories Video) ft. Aloe Blacc.mp4
+		  - Breaking the Habit (Official Music Video) [HD UPGRADE] – Linkin Park.mp4
+		  - Drake - God's Plan.mp4
+		  - fly_me_to_the_moon.mp4
+		  - Heavy [Official Music Video] - Linkin Park (feat. Kiiara).mp4
+		  - kaikai kitan (Jujutsu Kaisen but is it okay if it's lofi hiphop_).mp4
+		  - Queen - We Will Rock You (Official Video).mp4
+		  - SF9 - '여름 향기가 날 춤추게 해 (Summer Breeze)' MUSIC VIDEO.mp4
+	📂 Practical_4
+	  - Calculator.css
+	  - Calculator.html
+	  - Calculator.js
+	📂 TA1
+	  - TA1.css
+	  - TA1.html
+		📂 images
+		  - favicon_io.zip
+		  - refactor.jpg
+			📂 favicon_io
+			  - android-chrome-192x192.png
+			  - android-chrome-512x512.png
+			  - apple-touch-icon.png
+			  - favicon-16x16.png
+			  - favicon.ico
+			  - site.webmanifest
+📂 DEN
+  - DEN full operations.pdf
+  - DEN Printout using universal gates.pdf
+📂 PPS
+  - practical1_a.c
+  - practical1_b.c
+  - practical1_c.c
+  - practical2_a.c
+  - practical2_b.c
+  - practical2_c.c
+  - Practical3_a.c
+  - Practical3_b.c
+  - Practical3_c_1.c
+  - Practical3_c_2.c
+  - Practical3_c_3.c
+  - Practical4_a.c
+  - Practical4_b.c
+  - Practical5_a.c
+  - Practical5_b.c
+  - TA1_q2.c
+  - TA1_q3.c
+  - Template.c
+	📂 Screenshots
+	  - Screenshot from 2023-09-19 18-17-26.png
+	  - Screenshot from 2023-09-19 18-18-09.png
+	  - Screenshot from 2023-09-19 18-20-49.png
+	  - Screenshot from 2023-09-19 18-21-59.png
+	  - Screenshot from 2023-09-19 18-22-36.png
+	  - Screenshot from 2023-09-23 10-13-27.png
+	  - Screenshot from 2023-10-14 07-59-00.png
+	  - Screenshot from 2023-10-14 07-59-31.png
+	  - Screenshot from 2023-10-14 08-00-29.png
+	  - Screenshot from 2023-10-14 08-03-11.png
+	  - Screenshot from 2023-10-14 08-03-28.png
+	  - Screenshot from 2023-10-14 08-05-11.png
+	  - Screenshot from 2023-10-14 08-05-16.png
+	  - Screenshot from 2023-10-14 08-06-29.png
+	  - Screenshot from 2023-10-14 08-06-33.png
+	  - Screenshot from 2023-10-14 12-33-31.png
+	  - This will contain screenshots
+		📂 PDFs
+		  - PPS prac1 ss.pdf
+		  - PPS prac2 ss.pdf
+		  - PPS prac3 ss.pdf
+		  - PPS prac4 ss.pdf

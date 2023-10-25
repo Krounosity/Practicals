@@ -16,7 +16,7 @@ int main()
 	}
 	for (int k = 0; k < side; k++)
 	{
-		sum = sum + matrix[k][k];
+		sum += matrix[k][k];
 	}
 	printf("The sum of the diagonal elements of your matrix is %d.\n", sum);
 	return 0;
