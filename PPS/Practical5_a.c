@@ -1,38 +1,26 @@
 #include <stdio.h>
-
+#define Varnan 1000
 int main()
 {
-    int length_arr = 0, array_num[length_arr], num_find;
-    printf("Hi! What is the length of your array? --> ");
-    scanf("%d", &length_arr);
-    for (int i = 0; i < length_arr; i++)
-    {
-        printf("Enter number %d: \n", i + 1);
-        scanf("%d", &array_num[i]);
+    float arr[Varnan], num_find;
+    int len_arr,flag=0;
+    printf("Enter the length of your array: ");
+    scanf("%d",&len_arr);
+    for(int i = 1; i<=len_arr;i++){
+        printf("Enter element %d: ",i);
+        scanf("%f",&arr[i-1]);
     }
-    printf("What is the number that you want to find? --> ");
-    scanf("%d", &num_find);
-    int flag = 0;
-    for (int j = 0; j < length_arr; j++)
-    {
-        if (array_num[j] == num_find)
-        {
+    printf("Enter the number you want to find: ");
+    scanf("%f",&num_find);
+    for(int j=1;j<=len_arr;j++){
+        if(arr[j-1]==num_find){
             flag++;
+            printf("Your element is present in the array at position %d.\n",j);
             break;
         }
-        else
-        {
-            continue;
-        }
     }
-    if (flag > 0)
-    {
-        printf("Yes! Your number is present in the array!.\n");
+    if(flag==0){
+        printf("Your element is not present in the array.\n");
     }
-    else
-    {
-        printf("No. Your number is not present in the array.\n");
-    }
-    printf("Thank you!");
     return 0;
 }
