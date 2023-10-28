@@ -1,23 +1,26 @@
-#include <stdio.h>
-
-int main()
-{
-	int side, sum = 0;
-	printf("Welcome to the lower triangular matrix creator! Please enter the length of the side of your matrix: ");
-	scanf("%d", &side);
-	int matrix[side - 1][side - 1];
-	for (int i = 0; i < side; i++)
-	{
-		for (int j = 0; j <= i; j++)
-		{
-			printf("Please enter element with index %d,%d: ", i + 1, j + 1);
-			scanf("%d", &matrix[i][j]);
+#include<stdio.h>
+#define MAX 1000
+int main(){
+	int length;
+	float arr[MAX][MAX];
+	printf("The given matrix should be a square matrix.\n");
+	printf("Enter the length of the matrix: ");
+	scanf("%d",&length);
+	printf("Enter the elements in the array from left to right and top to bottom: \n");
+	printf("The first position being (0,0):\n");
+	for(int i = 0;i<length;i++){
+		for(int j=0;j<length;j++){
+			printf("Enter element at position %d %d: ",i,j);
+			scanf("%f",&arr[i][j]);
 		}
 	}
-	for (int k = 0; k < side; k++)
-	{
-		sum += matrix[k][k];
+	//Printing lower triangular matrix of the given matrix.
+	printf("The lower triangular matrix of the given matrix is: \n");
+	for(int i = 0;i<length;i++){
+		for(int j=0;j<=i;j++){
+			printf("%f  ",arr[i][j]);
+		}
+		printf("\n");
 	}
-	printf("The sum of the diagonal elements of your matrix is %d.\n", sum);
-	return 0;
+	return 0;	
 }
