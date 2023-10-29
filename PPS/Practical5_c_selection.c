@@ -12,14 +12,12 @@ int main(){
     float smallest;
     int position =0;
     for(int j=0;j<length;j++){
-        smallest=arr[j];
+        position=j;
         for(int k=j;k<length;k++){
-            if(arr[k]<smallest){
-                smallest=arr[k];
+            if(arr[k]<arr[position]){
                 position=k;
             }
         }
-
         if(arr[position]<arr[j]){int temp=arr[j];
         arr[j]=arr[position];
         arr[position]=temp;}
