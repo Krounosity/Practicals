@@ -17,8 +17,11 @@ int main(){
 	//Printing lower triangular matrix of the given matrix.
 	printf("The lower triangular matrix of the given matrix is: \n");
 	for(int i = 0;i<length;i++){
-		for(int j=0;j<=i;j++){
-			printf("%f  ",arr[i][j]);
+		for(int j=0;j<length;j++){
+			if(i>=j){printf("%.2lf  ",arr[i][j]);}
+			else{
+				printf("0.00  ");
+			}
 		}
 		printf("\n");
 	}
