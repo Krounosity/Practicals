@@ -118,7 +118,7 @@ document.querySelector(".divide").addEventListener("click", function () {
   document.querySelector(".result").innerHTML = result + "/";
   operation = "divide";
 });
-document.querySelector(".equal").addEventListener("click", function () {
+document.querySelector(".equals").addEventListener("click", function () {
   if (operation === "plus") {
     result = calculation(result, afterOperation, plus);
     document.querySelector(".result").innerHTML = result;
