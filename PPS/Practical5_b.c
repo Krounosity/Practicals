@@ -27,6 +27,7 @@
 			}
 			printf("\n");
 		}
+		//Declaring and computing individual sums of both diagonals in the lower triangular matrix.
 		float principle_sum=0;
 		float secondary_sum=0;
 		for(int i=0;i<length;i++){
@@ -35,6 +36,6 @@
 		for(int i=0;i<length;i++){
 			if(length-1-i<=i){secondary_sum+=arr[i][length-1-i];}
 		}
-		printf("\nThe sum of \n1) Principle diagonal elements is %.2f, and \n2) Secondary diagonal elements is %.2f.\n",principle_sum,secondary_sum);
+		printf("\nThe sum of \n1) Principle diagonal elements is %.2f, and \n2) Secondary diagonal elements(as in the lower triangular matrix) is %.2f.\n",principle_sum,secondary_sum);
 		return 0;	
 	}
