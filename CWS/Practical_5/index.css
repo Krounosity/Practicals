@@ -1,0 +1,18 @@
+html {
+  font-family: "Roboto Slab", sans-serif;
+}
+body {
+  background-color: beige;
+}
+#title {
+  text-align: center;
+  background-color: #34d2eb;
+  padding: 0.7rem 2rem;
+  font-size: 1.8rem;
+}
+#title_personal {
+  padding: 0rem 1.2rem;
+}
+#personal_info {
+  padding: 0rem 1.2rem;
+}

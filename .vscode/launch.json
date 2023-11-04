@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "v:/HP/Works/Practicals/Timepass",
-      "program": "v:/HP/Works/Practicals/Timepass/build/Debug/outDebug",
+      "cwd": "v:/HP/Works/Practicals/More_codes",
+      "program": "v:/HP/Works/Practicals/More_codes/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
