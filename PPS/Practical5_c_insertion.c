@@ -10,15 +10,19 @@ int main(){
         scanf("%f",&arr[i]);
     }
     //insertion sorting
-    for(int j=0;j<length;j++){
-        int k=j;
-        while(k>0 && arr[k]<arr[k+1]){
-            int temp=arr[k];
-            arr[k]=arr[k+1];
-            arr[k+1]=temp;
-            k--;
+   int i, k, j;
+    for (i = 1; i < length; i++) 
+    {
+        k = arr[i];
+        j = i - 1;
+        while (j >= 0 && arr[j] > k) 
+        {
+            arr[j + 1] = arr[j];
+            j = j - 1;
         }
+        arr[j + 1] = k;
     }
+    
     for(int i=0;i<length;i++)
     {
         printf("%f ",arr[i]);
