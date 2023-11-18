@@ -23,7 +23,7 @@ int palindrome(char string[]){
 int main(){
     char str_in[100];
     printf("Enter a word: ");
-    scanf("%s",&str_in);
+    scanf("%s",str_in);
     int result = palindrome(str_in);
     if(result==0){
         printf("The word is a palindrome.\n");
