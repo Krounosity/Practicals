@@ -1,20 +1,21 @@
 #include<stdio.h>
-int i=2;
-int gcd=1;
-int hcf(int number1, int number2){
-    if(i<=number1&&i<=number2){
-        if(number1%i==0 && number2%i==0){
-            gcd=i;
-        }
-        i++;
-        hcf(number1,number2);
-    }
+int number1,number2, i=2,hcf=0;
+int gcd(int num1, int num2){
+	if(i<=num1 && i<=num2){
+		if(num1%i==0 && num2%i==0){
+			hcf=i;
+		}
+			i++;
+			gcd(num1,num2);
+	}
 }
+
 int main(){
-    int num1=0,num2=0;
-    printf("Enter two numbers seperated by a space: ");
-    scanf("%d %d",&num1,&num2);
-    hcf(num1,num2);
-    printf("The GCD or HCF of %d and %d is %d",num1,num2,gcd);
-    return 0;
+	printf("Enter two positive integers separated by a space:");
+	number1=0;
+	number2=0;
+	scanf("%d %d",&number1,&number2);
+	gcd(number1,number2);
+	printf("The GCD or HCF of %d and %d is %d.\n",number1,number2,hcf);
+	return 0;
 }
