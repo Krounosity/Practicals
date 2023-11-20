@@ -2,17 +2,48 @@ html {
   font-family: "Roboto Slab", sans-serif;
 }
 body {
-  background-color: beige;
+  background-color: rgb(255, 242, 0);
 }
 #title {
   text-align: center;
   background-color: #34d2eb;
   padding: 0.7rem 2rem;
   font-size: 1.8rem;
+  margin: 0rem 20rem;
+  border-radius: 20px;
 }
-#title_personal {
+#personal {
+  padding-top: 1.2rem;
   padding: 0rem 1.2rem;
+  margin: 0rem 20rem;
+  background-color: #34d2eb;
+  border-radius: 20px;
 }
-#personal_info {
-  padding: 0rem 1.2rem;
+#personal:hover {
+  background-color: #41d8ef;
+  box-shadow: 3px 3px 5px 6px rgb(175, 214, 221);
+  transition: 0.6s ease;
+}
+#title-personal {
+  padding-top: 1.2rem;
+}
+
+#submit {
+  border-radius: 6px;
+  font-size: 1.2rem;
+  border-color: red;
+  border-width: 3.6px;
+}
+#submit:hover {
+  background-color: red;
+  color: white;
+  transition: 0.3s ease;
+}
+.input {
+  font-size: 1.2rem;
+  border-radius: 6px;
+  min-height: 27px;
+}
+label {
+  font-size: 1.2rem;
 }

@@ -14,60 +14,74 @@
   </head>
   <body>
     <div id="title"><h1>Registration Form</h1></div>
-    <div id="title_personal"><h2>Personal Details</h2></div>
-    <form id="personal_info" name="reg_form" onsubmit="return validation()">
-      <label for="first_name">First Name:</label><br />
-      <input type="text" name="first_name" placeholder="John" /><br /><br />
-      <label for="last_name">Last Name:</label><br />
-      <input
-        class="input"
-        type="text"
-        name="last_name"
-        placeholder="Smith"
-      /><br />
-      <br />
-      <label for="phone_num">Phone Number:</label><br />
-      <input
-        class="input"
-        type="tel"
-        name="phone_num"
-        placeholder="1234567890"
-        pattern="[0-9]{10}"
-        required
-      /><br />
-      <br />
-      <label for="perm_address">Permanent Address:</label><br />
-      <textarea class="input" id="perm_address" rows="4" cols="52"></textarea>
-      <br />
-      <br />
-      <label for="state">State:</label><br />
-      <select name="state" class="input">
-        <option value="Select State">Select State</option>
-        <option value="Andhra Pradesh">Andhra Pradesh</option>
-        <option value="Bihar">Bihar</option>
-        <option value="Himachal_Pradesh">Himachal Pradesh</option>
-        <option value="Karnataka">Karnataka</option>
-        <option value="Maharashtra">Maharashtra</option>
-        <option value="Nagaland">Nagaland</option>
-        <option value="Orissa">Orissa</option>
-        <option value="Rajasthan">Rajasthan</option>
-        <option value="Uttarakhand">Uttarakhand</option></select
-      ><br /><br />
-      <label for="dobirth">Date Of Birth:</label><br />
-      <input type="date" name="dobirth" class="input" />
-      <br /><br />
-      <label for="Gender">Gender:</label><br />
-      <select name="Gender" class="input">
-        <option value="Select Gender">Select gender</option>
-        <option value="male">Male</option>
-        <option value="female">Female</option>
-        <option value="other">Others</option>
-        <option value="not_specified">Choose not to specify</option></select
-      ><br /><br />
-      <label for="income">Annual Income:</label><br />
-      <input type="number" class="input" id="income" /><br /><br />
-      <input type="submit" name="submit" value="Submit" /><br /><br />
-    </form>
+    <div id="personal">
+      <h2 id="title-personal">Personal Details</h2>
+      <form id="personal_info" name="reg_form" onsubmit="return validation()">
+        <label for="first_name">First Name:</label
+        >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input
+          type="text"
+          name="first_name"
+          placeholder="John"
+          class="input"
+        /><br /><br />
+        <label for="last_name">Last Name:</label
+        >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input
+          class="input"
+          type="text"
+          name="last_name"
+          placeholder="Smith"
+        /><br />
+        <br />
+        <label for="phone_num">Phone Number:</label
+        >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input
+          class="input"
+          type="tel"
+          name="phone_num"
+          placeholder="1234567890"
+          pattern="[0-9]{10}"
+          required
+        /><br />
+        <br />
+        <label for="perm_address">Permanent Address:</label>&nbsp;
+        <textarea class="input" id="perm_address" rows="4" cols="52"></textarea>
+        <br />
+        <br />
+        <label for="state">State:</label
+        >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <select name="state" class="input">
+          <option value="Select State">Select State</option>
+          <option value="Andhra Pradesh">Andhra Pradesh</option>
+          <option value="Bihar">Bihar</option>
+          <option value="Himachal_Pradesh">Himachal Pradesh</option>
+          <option value="Karnataka">Karnataka</option>
+          <option value="Maharashtra">Maharashtra</option>
+          <option value="Nagaland">Nagaland</option>
+          <option value="Orissa">Orissa</option>
+          <option value="Rajasthan">Rajasthan</option>
+          <option value="Uttarakhand">Uttarakhand</option></select
+        ><br /><br />
+        <label for="dobirth">Date Of Birth:</label
+        >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="date" name="dobirth" class="input" />
+        <br /><br />
+        <label for="Gender">Gender:</label
+        >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <select name="Gender" class="input">
+          <option value="Select Gender">Select gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Others</option>
+          <option value="not_specified">Choose not to specify</option></select
+        ><br /><br />
+        <label for="income">Annual Income:</label
+        >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="number" class="input" id="income" /><br /><br />
+        <input type="submit" id="submit" value="Submit" /><br /><br />
+      </form>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>
