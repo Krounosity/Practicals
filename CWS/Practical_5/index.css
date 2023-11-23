@@ -2,11 +2,12 @@ html {
   font-family: "Roboto Slab", sans-serif;
 }
 body {
-  background-color: rgb(255, 242, 0);
+  background-color: #34d2eb;
+  margin: 0;
 }
 #title {
   text-align: center;
-  background-color: #34d2eb;
+  background-color: rgb(255, 242, 0);
   padding: 0.7rem 2rem;
   font-size: 1.8rem;
   margin: 0rem 20rem;
@@ -16,12 +17,12 @@ body {
   padding-top: 1.2rem;
   padding: 0rem 1.2rem;
   margin: 0rem 20rem;
-  background-color: #34d2eb;
+  background-color: rgb(255, 242, 0);
   border-radius: 20px;
 }
 #personal:hover {
-  background-color: #41d8ef;
-  box-shadow: 3px 3px 5px 6px rgb(175, 214, 221);
+  background-color: rgb(255, 245, 47);
+  box-shadow: 3px 3px 5px 6px rgb(255, 252, 194);
   transition: 0.6s ease;
 }
 #title-personal {
@@ -46,4 +47,20 @@ body {
 }
 label {
   font-size: 1.2rem;
+}
+footer {
+  background-color: rgb(255, 242, 0);
+  font-size: 2rem;
+  text-align: center;
+  padding: 10px 0px;
+  margin-top: 2rem;
+}
+.icons {
+  padding: 0rem 2rem;
+  margin-left: 1rem;
+  size: 2rem 2rem;
+}
+.icons-image:hover {
+  box-shadow: 10px 10px 5px lightblue;
+  transition: box-shadow 0.2s ease-in-out;
 }
