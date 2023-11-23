@@ -9,10 +9,10 @@ struct students{
     int two;
     int three;
     int aggregate;
-}student[5];
+};
 
-int length = 0;
 void info_take(){
+    struct students student[5];
     for(int i=0;i<5;i++){
         student[i].aggregate = 0;
         printf("\n\nFor student %d:\n",i+1);
@@ -29,14 +29,26 @@ void info_take(){
         printf("\nMarks in subject 3: ");
         scanf("%d",&student[i].three);
         student[i].aggregate+=student[i].three;
-        length++;
     }
-    sort();
+    sort(student,5);
+    for(int l=4;l>=0;l--){
+        printf("Rank %d: %s, Aggregate marks: %d\n",l+1,student[l].f_name,student[l].aggregate);
+    }
 }
 
-void sort(){
-    for(int i=1;i<length;i++){
-
+void sort(struct students student[],int times){
+    for(int i=0;i<times-1;i++){
+        int smallest = i;
+        for(int j=i+1;j<times;j++){
+            if(student[smallest].aggregate>student[j].aggregate){
+                smallest = j;
+            }
+        }
+        if(student[i].aggregate>student[smallest].aggregate){
+            struct students temp = student[i];
+            student[i] = student[smallest];
+            student[smallest] = temp;
+        }
     }
 }
 
