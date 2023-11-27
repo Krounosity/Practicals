@@ -9,7 +9,6 @@ int main(){
         printf("Enter element %d: ",i+1);
         scanf("%f",&arr[i]);
     }
-    float smallest;
     int position =0;
     for(int j=0;j<length;j++){
         position=j;
