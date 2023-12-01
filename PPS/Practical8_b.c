@@ -22,6 +22,6 @@ int main(){
         }
     }
     if(characters!=0){lines++;}
-    printf("1) Number of lines in the file: %d\n2) Number of characters in the file: %d\n3) Number of blanks in the document: %d",lines,characters,blanks);
+    printf("The file name is EMP_FL\n1) Number of lines in the file: %d\n2) Number of characters in the file: %d\n3) Number of blanks in the document: %d",lines,characters,blanks);
     return 0;
 }
