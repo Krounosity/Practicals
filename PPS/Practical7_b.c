@@ -1,6 +1,5 @@
 #include<stdio.h>
 #include<string.h>
-void sort();
 void info_take();
 struct books{
     int id;
