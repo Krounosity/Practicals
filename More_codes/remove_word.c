@@ -1,61 +1,85 @@
-//Declaring preprocessor directives
-#include<stdio.h>
-#include<stdlib.h>
-#include<string.h>
-#define MAX 600
+ #include <stdio.h>
+  #include <string.h>
+  #define MAX 256
 
-//Declaring file pointers
-FILE *FILE_ptr;
-FILE *FINAL_ptr;
+  int main() {
+        FILE *fp1, *fp2;
+        char word[MAX], filename[MAX];
+        char str[MAX], temp[] = "temp.txt", *ptr, *tmp;
 
-int main(){
+        //get the input file from the user .
+        printf("Enter your input file name:");
+        fgets(filename, MAX, stdin);
+        filename[strlen(filename) - 1] = '\0';
 
-    //Declaring strings to hold file name and the word to be deleted.
-    char fileName[MAX], temp_filename[MAX], deletion[MAX];
+        // get the word to delete from the user .
+        printf("Enter your input word:");
+        scanf("%s", word);
 
-    //Getting file name from user.
-    printf("Enter file name: ");
-    scanf("%s",fileName);
+        // open input file in read mode .
+        fp1 = fopen(filename, "r");
 
-    //Getting the word to delete from user.
-    printf("Enter the word to be deleted : ");
-    scanf("%s",deletion);
-    
-    //Naming the temporary file.
-    strcpy(temp_filename, "temp___"); //Prefixing the temporary file name to "temp___".
-    strcat(temp_filename, fileName); //Concatenating the two strings
-
-    //Opening files.
-    FILE_ptr = fopen(fileName,"r");
-    FINAL_ptr = fopen(temp_filename,"w");
-
-    //Handling file opening errors.
-    if(FILE_ptr == NULL || FINAL_ptr == NULL){
-        printf("Error opening file(s).\n");
-        return 1;
-    }
-
-    //Declaring character variable temporarily storing characters from initial files.
-    char s[MAX];
-
-    //While loop to get word from initial file.
-    while(fgets(s,sizeof(s),FILE_ptr)!=NULL){
-        if(strstr(s,deletion)==NULL){
-            fputs(s,FINAL_ptr);
-        } else{
-            continue;
+        // error handling .
+        if (!fp1) {
+                printf("Unable to open the input file!!\n");
+                return 0;
         }
-    }
 
-    //Closing files.
-    fclose(FILE_ptr);
-    fclose(FINAL_ptr);
+        // open temporary file in write mode .
+        fp2 = fopen(temp, "w");
 
-    //Removing initial file.
-    remove(fileName);
-    
-    //Renaming temporary file as the initial file.
-    rename(temp_filename, fileName);
-    
-    return 0;
-}
+        // error handling .
+        if (!fp2) {
+                printf("Unable to open temporary file!!\n");
+                return 0;
+        }
+
+        // delete the given word from the file .
+        while (!feof(fp1)) {
+
+            strcpy(str, "\0");
+
+            // read line by line from the input file .
+            fgets(str, MAX, fp1);
+
+            // check whether the word to delete is present in the current scanned line .
+            if (strstr(str, word)) {
+                    tmp = str;
+                    while (ptr = strstr(tmp, word)) {
+
+                            // letters present before the word to be deleted .
+                            while (tmp != ptr) {
+                                    fputc(*tmp, fp2);
+                                    tmp++;
+                            }
+
+                            // skip the word to be deleted .
+                            ptr += strlen(word);
+                            tmp = ptr;
+                    }
+
+                    // characters present after the word to be deleted .
+                    while (*tmp != '\0') {
+                            fputc(*tmp, fp2);
+                            tmp++;
+                    }
+            } else {
+
+                    // current scanned line doesn't have the word that need to be deleted. .
+                    fputs(str, fp2);
+
+                }
+        }
+
+        // close the opened files .
+        fclose(fp1);
+        fclose(fp2);
+
+        // remove the input file .
+        remove(filename);
+
+        // rename temporary file name to input file name .
+        rename(temp, filename);
+        
+        return 0;
+  }
