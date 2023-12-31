@@ -18,7 +18,7 @@ int main(){
 	while(first<=last){
 		int middle= (first+last)/2;
 		if(arr[middle]==search){
-			printf("Your element is at location %d. (The first position being zero)\n",middle);
+			printf("Your element is at index %d. (The first index being zero)\n",middle);
 			break;
 		}
 		else if(arr[middle]>search){

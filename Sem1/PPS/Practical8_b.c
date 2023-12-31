@@ -9,6 +9,10 @@ int blanks=0;
 
 int main(){
     EMP_ptr = fopen("EMP_FL.txt","r");
+    if(EMP_ptr == NULL){
+        printf("Unable to open file.\n");
+        return 1;
+    }
     char c;
     for(c=getc(EMP_ptr); c!=EOF;c=getc(EMP_ptr)){
         if(c==32){
