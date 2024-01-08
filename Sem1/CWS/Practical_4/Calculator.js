@@ -1,149 +1,149 @@
 var result = 0;
 var afterOperation = 0;
 var operation = "nothing";
-document.querySelector(".one").addEventListener("click", function () {
+$(".one").on("click", function () {
   if (operation === "nothing") {
     result = result * 10 + 1;
-    document.querySelector(".result").innerHTML = result;
+    $(".result").innerHTML = result;
   } else {
     afterOperation = afterOperation * 10 + 1;
-    document.querySelector(".result").innerHTML += afterOperation % 10;
+    $(".result").innerHTML += afterOperation % 10;
   }
 });
-document.querySelector(".two").addEventListener("click", function () {
+$(".two").on("click", function () {
   if (operation === "nothing") {
     result = result * 10 + 2;
-    document.querySelector(".result").innerHTML = result;
+    $(".result").innerHTML = result;
   } else {
     afterOperation = afterOperation * 10 + 2;
-    document.querySelector(".result").innerHTML += afterOperation % 10;
+    $(".result").innerHTML += afterOperation % 10;
   }
 });
-document.querySelector(".three").addEventListener("click", function () {
+$(".three").on("click", function () {
   if (operation === "nothing") {
     result = result * 10 + 3;
-    document.querySelector(".result").innerHTML = result;
+    $(".result").innerHTML = result;
   } else {
     afterOperation = afterOperation * 10 + 3;
-    document.querySelector(".result").innerHTML += afterOperation % 10;
+    $(".result").innerHTML += afterOperation % 10;
   }
 });
-document.querySelector(".four").addEventListener("click", function () {
+$(".four").on("click", function () {
   if (operation === "nothing") {
     result = result * 10 + 4;
-    document.querySelector(".result").innerHTML = result;
+    $(".result").innerHTML = result;
   } else {
     afterOperation = afterOperation * 10 + 4;
-    document.querySelector(".result").innerHTML += afterOperation % 10;
+    $(".result").innerHTML += afterOperation % 10;
   }
 });
-document.querySelector(".five").addEventListener("click", function () {
+$(".five").on("click", function () {
   if (operation === "nothing") {
     result = result * 10 + 5;
-    document.querySelector(".result").innerHTML = result;
+    $(".result").innerHTML = result;
   } else {
     afterOperation = afterOperation * 10 + 5;
-    document.querySelector(".result").innerHTML += afterOperation % 10;
+    $(".result").innerHTML += afterOperation % 10;
   }
 });
-document.querySelector(".six").addEventListener("click", function () {
+$(".six").on("click", function () {
   if (operation === "nothing") {
     result = result * 10 + 6;
-    document.querySelector(".result").innerHTML = result;
+    $(".result").innerHTML = result;
   } else {
     afterOperation = afterOperation * 10 + 6;
-    document.querySelector(".result").innerHTML += afterOperation % 10;
+    $(".result").innerHTML += afterOperation % 10;
   }
 });
-document.querySelector(".seven").addEventListener("click", function () {
+$(".seven").on("click", function () {
   if (operation === "nothing") {
     result = result * 10 + 7;
-    document.querySelector(".result").innerHTML = result;
+    $(".result").innerHTML = result;
   } else {
     afterOperation = afterOperation * 10 + 7;
-    document.querySelector(".result").innerHTML += afterOperation % 10;
+    $(".result").innerHTML += afterOperation % 10;
   }
 });
-document.querySelector(".eight").addEventListener("click", function () {
+$(".eight").on("click", function () {
   if (operation === "nothing") {
     result = result * 10 + 8;
-    document.querySelector(".result").innerHTML = result;
+    $(".result").innerHTML = result;
   } else {
     afterOperation = afterOperation * 10 + 8;
-    document.querySelector(".result").innerHTML += afterOperation % 10;
+    $(".result").innerHTML += afterOperation % 10;
   }
 });
-document.querySelector(".nine").addEventListener("click", function () {
+$(".nine").on("click", function () {
   if (operation === "nothing") {
     result = result * 10 + 9;
-    document.querySelector(".result").innerHTML = result;
+    $(".result").innerHTML = result;
   } else {
     afterOperation = afterOperation * 10 + 9;
-    document.querySelector(".result").innerHTML += afterOperation % 10;
+    $(".result").innerHTML += afterOperation % 10;
   }
 });
-document.querySelector(".zero").addEventListener("click", function () {
+$(".zero").on("click", function () {
   if (operation === "nothing") {
     result = result * 10 + 0;
-    document.querySelector(".result").innerHTML = result;
+    $(".result").innerHTML = result;
   } else {
     afterOperation = afterOperation * 10 + 0;
-    document.querySelector(".result").innerHTML += afterOperation % 10;
+    $(".result").innerHTML += afterOperation % 10;
   }
 });
-document.querySelector(".clear").addEventListener("click", function () {
-  document.querySelector(".result").innerHTML = "";
+$(".clear").on("click", function () {
+  $(".result").innerHTML = "";
   result = 0;
   afterOperation = 0;
   operation = "nothing";
 });
-document.querySelector(".sign").addEventListener("click", function () {
+$(".sign").on("click", function () {
   result = -result;
-  document.querySelector(".result").innerHTML = result;
+  $(".result").innerHTML = result;
 });
-document.querySelector(".plus").addEventListener("click", function () {
-  document.querySelector(".result").innerHTML = result + "+";
+$(".plus").on("click", function () {
+  $(".result").innerHTML = result + "+";
 
   operation = "plus";
 });
-document.querySelector(".minus").addEventListener("click", function () {
-  document.querySelector(".result").innerHTML = result + "-";
+$(".minus").on("click", function () {
+  $(".result").innerHTML = result + "-";
   operation = "minus";
 });
-document.querySelector(".mult").addEventListener("click", function () {
-  document.querySelector(".result").innerHTML = result + "*";
+$(".mult").on("click", function () {
+  $(".result").innerHTML = result + "*";
   operation = "mult";
 });
-document.querySelector(".divide").addEventListener("click", function () {
-  document.querySelector(".result").innerHTML = result + "/";
+$(".divide").on("click", function () {
+  $(".result").innerHTML = result + "/";
   operation = "divide";
 });
-document.querySelector(".equals").addEventListener("click", function () {
+$(".equals").on("click", function () {
   if (operation === "plus") {
     result = calculation(result, afterOperation, plus);
-    document.querySelector(".result").innerHTML = result;
+    $(".result").innerHTML = result;
   } else if (operation === "minus") {
     result = calculation(result, afterOperation, minus);
-    document.querySelector(".result").innerHTML = result;
+    $(".result").innerHTML = result;
   } else if (operation === "mult") {
     result = calculation(result, afterOperation, mult);
-    document.querySelector(".result").innerHTML = result;
+    $(".result").innerHTML = result;
   } else if (operation === "divide") {
     result = calculation(result, afterOperation, divide);
-    document.querySelector(".result").innerHTML = result;
+    $(".result").innerHTML = result;
   }
   operation = "nothing";
 });
-document.querySelector(".back").addEventListener("click", function () {
+$(".back").on("click", function () {
   if (operation === "nothing" && result !== 0) {
     result = Math.floor(result / 10);
-    document.querySelector(".result").innerHTML = result;
+    $(".result").innerHTML = result;
   } else if (operation !== "nothing" && afterOperation === 0) {
     operation = "nothing";
-    document.querySelector(".result").innerHTML = result;
+    $(".result").innerHTML = result;
   } else if (afterOperation !== 0) {
     afterOperation = Math.floor(afterOperation / 10);
-    document.querySelector(".result").innerHTML += afterOperation;
+    $(".result").innerHTML += afterOperation;
   }
 });
 //Functions or operations
